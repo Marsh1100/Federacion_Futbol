@@ -73,7 +73,9 @@ namespace FederacionFutbol2.Clases
 
        public void RegistrarJugador(Dictionary<string,Equipo> DicEquipo, Dictionary<string,Jugador> DicJugadores)
         {
-
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("******* REGISTRAR JUGADOR *******");
+            Console.ResetColor();
             Console.WriteLine("Digite el ID del equipo al que va a pertenecer el Jugador:");
             string idEquipo = Convert.ToString(Console.ReadLine()) ?? "";
 
@@ -125,5 +127,27 @@ namespace FederacionFutbol2.Clases
 
         }
         
+
+        public void MostrarJugadores(Dictionary<string,Equipo> DicEquipos,Dictionary<string,Jugador> DicJugadores)
+        {
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("------ JUGADORES -----");
+            Console.ResetColor();
+
+            Console.WriteLine("ID\tEquipo\tNombre\tEspecialidad");
+            foreach(var jugador in DicJugadores)
+            {
+                string idEquipo = jugador.Value.IdEquipo;
+                string equipo = DicEquipos[idEquipo].Nombre ?? "Equipo";
+
+
+                Console.WriteLine(jugador.Key+"\t"+equipo+"\t"+jugador.Value.Nombre+"\t"+jugador.Value.posicionJuego);
+            }
+        }
+
+        public void VenderJugador(Dictionary<string,Jugador> DicJugadores)
+        {
+            
+        }
     }
 }

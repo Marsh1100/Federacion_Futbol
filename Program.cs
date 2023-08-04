@@ -5,7 +5,6 @@ internal class Program
 {
      //Diccionario de Ligas
     static Dictionary<string,Liga> DicLigas = new ();
-
     //Diccionario de Equipos
     static Dictionary<string,Equipo> DicEquipos = new ();
     //Diccionario de Jugador
@@ -18,6 +17,32 @@ internal class Program
     public static void Main()
     {
         string opcion;
+        Liga newLiga = new("aaaa",1899,"cali");
+        DicLigas.Add("123",newLiga);
+        DicLigas.Add("456",newLiga);
+        DicLigas.Add("789",newLiga);
+
+        Equipo newEquipo = new ("eeee",23,"Tunja","Federico","123");
+        Equipo newEquipo2 = new ("Bucaros",23,"Tunja","Federico","123");
+        Equipo newEquipo3 = new ("Millos",23,"Tunja","Federico","456");
+
+        DicEquipos.Add("111",newEquipo);
+        DicEquipos.Add("222",newEquipo2);
+        DicEquipos.Add("333",newEquipo3);
+
+        Jugador newJugador = new("Cesar",17,"18","Lateral","Valledupar","111");
+        Jugador newJugador2 = new("Luis",17,"18","Delantero","Valledupar","222");
+        Jugador newJugador3 = new("Alejandro",17,"18","Delantero","Valledupar","333");
+
+        DicJugadores.Add("999",newJugador);
+        DicJugadores.Add("888",newJugador);
+        DicJugadores.Add("666",newJugador2);
+        DicJugadores.Add("555",newJugador3);
+
+
+        DicJugadores.Add("777",newJugador2);
+
+
 
         do
         {
@@ -78,22 +103,39 @@ internal class Program
             case "1.3":
                 metodosEquipo.MostrarEquipos(DicEquipos);
                 metodosJugador.RegistrarJugador(DicEquipos,DicJugadores);
-                foreach(var jugador in DicJugadores)
-                {
-                    string idEquipo = jugador.Value.IdEquipo;
-                    string equipo = DicEquipos[idEquipo].Nombre ?? "Equipo";
-
-
-                    Console.WriteLine("ID Jugador:{0} \tEquipo:{1} \tNombre {2}\tEdad {3}",jugador.Key,equipo,jugador.Value.Nombre,jugador.Value.Edad);
-                }
+                
                 break;
             case "1.4":
                 metodosEquipo.MostrarEquipos(DicEquipos);
                 metodosEntrenador.RegistrarEntrenador(DicEquipos,DicEntrenadores);
+
+                foreach(var entrenador in DicJugadores)
+                {
+                    string idEquipo = entrenador.Value.IdEquipo;
+                    string equipo = DicEquipos[idEquipo].Nombre ?? "Equipo";
+
+
+                    Console.WriteLine("ID entrenador:{0} \tEquipo:{1} \tNombre {2}\tEdad {3}",entrenador.Key,
+                    equipo,entrenador.Value.Nombre,entrenador.Value.Edad);
+                }
                 break;
             case "1.5":
+                metodosEquipo.MostrarEquipos(DicEquipos);
+                metodosMasajista.RegistrarMasajista(DicEquipos,DicMasajistas);
+                
+                foreach(var masajista in DicMasajistas)
+                {
+                    string idEquipo = masajista.Value.IdEquipo;
+                    string equipo = DicEquipos[idEquipo].Nombre ?? "Equipo";
+
+
+                    Console.WriteLine("ID masajista:{0} \tEquipo:{1} \tNombre {2}\tEdad {3}",masajista.Key,
+                    equipo,masajista.Value.Nombre,masajista.Value.Edad);
+                }
                 break;
             case "1.6":
+                    metodosJugador.MostrarJugadores(DicEquipos,DicJugadores);
+                    
                 break;
             case "1.7":
                 break;
