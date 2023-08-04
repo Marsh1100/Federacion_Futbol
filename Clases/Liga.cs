@@ -65,7 +65,7 @@ namespace FederacionFutbol2.Clases
                     Console.WriteLine("Digite ciudad de origen del equipo: ");
                     string ciudadLiga = Convert.ToString(Console.ReadLine()) ?? "Propietario";
 
-                    Liga newLiga = new Liga(nombreLiga,fundacionLiga,ciudadLiga);
+                    Liga newLiga = new (nombreLiga,fundacionLiga,ciudadLiga);
                     DicLiga.Add(idLiga,newLiga);
 
                     Console.WriteLine("¡Liga registrada exitosamente!");

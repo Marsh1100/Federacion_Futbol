@@ -74,6 +74,11 @@ namespace FederacionFutbol2.Clases
         public void RegistrarEntrenador(Dictionary<string,Equipo> DicEquipo, Dictionary<string,Entrenador> DicEntrenadores)
         {
 
+
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("******* REGISTRAR ENTRENADOR *******");
+            Console.ResetColor();
+
             Console.WriteLine("Digite el ID del equipo al que va a pertenecer el Entrenador:");
             string idEquipo = Convert.ToString(Console.ReadLine()) ?? "";
 

@@ -64,6 +64,10 @@ namespace FederacionFutbol2.Clases
 
         public void RegistrarEquipo(Dictionary<string,Liga> DicLiga, Dictionary<string,Equipo> DicEquipo)
         {
+
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("******* REGISTRAR EQUIPO *******");
+            Console.ResetColor();
             Console.WriteLine("Digite el ID de la liga al que va a pertenecer el equipo:");
             string idLiga = Convert.ToString(Console.ReadLine()) ?? "Liga";
 
