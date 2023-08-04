@@ -108,5 +108,19 @@ namespace FederacionFutbol2.Clases
             }
 
         }
+
+        public void MostrarEquipos(Dictionary<string,Equipo> DicEquipo){
+            
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("------ EQUIPOS -----");
+            Console.ResetColor();
+            Console.WriteLine("ID\tNombre");
+            foreach(var equipo in DicEquipo)
+            {
+                Console.WriteLine(equipo.Key+"\t"+equipo.Value.Nombre);
+            }
+            Console.ReadKey();
+
+        }
     }
 }

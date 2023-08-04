@@ -62,10 +62,13 @@ internal class Program
 
                 foreach(var equipo in DicEquipos)
                 {
-                    Console.WriteLine("ID Equipo {0}\t Nombre {1}\t Edad {2}",equipo.Key,equipo.Value.Nombre,equipo.Value.Edad);
+                    string? idliga = equipo.Value.IdLiga;
+                    string? liga = DicLigas[idliga].Nombre ?? "Liga";
+                    Console.WriteLine("ID Equipo {0}\tLiga{1}\tNombre {2}\tEdad {3}",equipo.Key,liga,equipo.Value.Nombre,equipo.Value.Edad);
                 }
                 break;
             case "1.3":
+
                 break;
             case "1.4":
                 break;

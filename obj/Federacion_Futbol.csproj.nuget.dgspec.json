@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Documents\\Campus Programmer\\ClasesCSHARP\\Federacion_Futbol\\Federacion_Futbol.csproj": {}
+    "D:\\Documents\\Campus Programmer\\Federacion_Futbol\\Federacion_Futbol.csproj": {}
   },
   "projects": {
-    "D:\\Documents\\Campus Programmer\\ClasesCSHARP\\Federacion_Futbol\\Federacion_Futbol.csproj": {
+    "D:\\Documents\\Campus Programmer\\Federacion_Futbol\\Federacion_Futbol.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Documents\\Campus Programmer\\ClasesCSHARP\\Federacion_Futbol\\Federacion_Futbol.csproj",
+        "projectUniqueName": "D:\\Documents\\Campus Programmer\\Federacion_Futbol\\Federacion_Futbol.csproj",
         "projectName": "Federacion_Futbol",
-        "projectPath": "D:\\Documents\\Campus Programmer\\ClasesCSHARP\\Federacion_Futbol\\Federacion_Futbol.csproj",
+        "projectPath": "D:\\Documents\\Campus Programmer\\Federacion_Futbol\\Federacion_Futbol.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "D:\\Documents\\Campus Programmer\\ClasesCSHARP\\Federacion_Futbol\\obj\\",
+        "outputPath": "D:\\Documents\\Campus Programmer\\Federacion_Futbol\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config"
