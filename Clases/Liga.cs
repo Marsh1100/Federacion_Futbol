@@ -4,9 +4,9 @@ namespace FederacionFutbol2.Clases
     public class Liga
     {
          //Atributos 
-        private string? nombre;
+        private string nombre;
         private int fundacion;
-        private string? ciudadOrigen;
+        private string ciudadOrigen;
 
         //Constructor
         public Liga()
@@ -22,7 +22,7 @@ namespace FederacionFutbol2.Clases
 
 
         //Propiedades
-        public string? Nombre
+        public string Nombre
         {
             get{ return this.nombre; }
             set{ this.nombre = value; }
@@ -34,7 +34,7 @@ namespace FederacionFutbol2.Clases
             set{ this.fundacion = value; }
         }
 
-        public string? CiudadOrigen
+        public string CiudadOrigen
         {
             get{ return this.ciudadOrigen; }
             set{ this.ciudadOrigen = value; }
@@ -48,7 +48,7 @@ namespace FederacionFutbol2.Clases
         {
             //Console.Clear();
             Console.ForegroundColor = ConsoleColor.Blue;
-            Console.WriteLine("****** REGISTRAR NUEVO EQUIPO ********\n");
+            Console.WriteLine("****** REGISTRAR NUEVA LIGA ********\n");
             Console.ResetColor();
             
             Console.WriteLine("Digite Id de la liga: ");
@@ -80,6 +80,8 @@ namespace FederacionFutbol2.Clases
                 }
             else{
                  Console.WriteLine("El número de ID de la liga ya se encuentra resgistrado");
+                    Console.ReadKey();
+
                 
             }
 
@@ -95,7 +97,6 @@ namespace FederacionFutbol2.Clases
             {
                 Console.WriteLine(liga.Key+"\t"+liga.Value.Nombre);
             }
-            Console.ReadKey();
 
         }
     

@@ -46,6 +46,7 @@ internal class Program
         string opcion;
         Liga metodosLiga = new Liga();
         Equipo metodosEquipo = new Equipo();
+        Jugador metodosJugador = new Jugador();
 
         do{
             MenuPlantel menuplantel = new MenuPlantel();
@@ -62,13 +63,22 @@ internal class Program
 
                 foreach(var equipo in DicEquipos)
                 {
-                    string? idliga = equipo.Value.IdLiga;
-                    string? liga = DicLigas[idliga].Nombre ?? "Liga";
+                    string idliga = equipo.Value.IdLiga;
+                    string liga = DicLigas[idliga].Nombre ?? "Liga";
                     Console.WriteLine("ID Equipo {0}\tLiga{1}\tNombre {2}\tEdad {3}",equipo.Key,liga,equipo.Value.Nombre,equipo.Value.Edad);
                 }
                 break;
             case "1.3":
+                metodosEquipo.MostrarEquipos(DicEquipos);
+                metodosJugador.RegistrarJugador(DicEquipos,DicJugadores);
+                foreach(var jugador in DicJugadores)
+                {
+                    string idEquipo = jugador.Value.IdEquipo;
+                    string equipo = DicEquipos[idEquipo].Nombre ?? "Equipo";
 
+
+                    Console.WriteLine("ID Jugador:{0} \tEquipo:{1} \tNombre {2}\tEdad {3}",jugador.Key,equipo,jugador.Value.Nombre,jugador.Value.Edad);
+                }
                 break;
             case "1.4":
                 break;

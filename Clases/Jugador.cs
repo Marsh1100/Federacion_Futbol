@@ -10,13 +10,13 @@ namespace FederacionFutbol2.Clases
         
         
         //Atributos 
-        private string? nombre;
+        private string nombre;
         private int edad;
-        private string? dorsal;
-        private string? posicionJuego;
-        private string? ciudadOrigen;
+        private string dorsal;
+        private string posicionJuego;
+        private string ciudadOrigen;
 
-        private string? idEquipo;
+        private string idEquipo;
 
 
         //Constructor
@@ -36,7 +36,7 @@ namespace FederacionFutbol2.Clases
 
 
         //Propiedades
-        public string? Nombre
+        public string Nombre
         {
             get{ return this.nombre; }
             set{ this.nombre = value; }
@@ -48,58 +48,64 @@ namespace FederacionFutbol2.Clases
             set{ this.edad = value; }
         }
 
-        public string? Dorsal
+        public string Dorsal
         {
             get{ return this.dorsal; }
             set{ this.dorsal = value; }
         }
-        public string? PosicionJuego
+        public string PosicionJuego
         {
             get{ return this.posicionJuego; }
             set{ this.posicionJuego = value; }
         }
 
-        public string? CiudadOrigen
+        public string CiudadOrigen
         {
             get{ return this.ciudadOrigen; }
             set{ this.ciudadOrigen = value; }
         }
 
-        public string? IdEquipo
+        public string IdEquipo
         {
             get{ return this.idEquipo; }
             set{ this.idEquipo = value; }
         }
 
-       /* public void RegistrarJugador(Dictionary<string,Equipo> DicEquipo, Dictionary<string,Jugador> DicJugadores)
+       public void RegistrarJugador(Dictionary<string,Equipo> DicEquipo, Dictionary<string,Jugador> DicJugadores)
         {
 
             Console.WriteLine("Digite el ID del equipo al que va a pertenecer el Jugador:");
-            string idLiga = Convert.ToString(Console.ReadLine()) ?? "Liga";
+            string idEquipo = Convert.ToString(Console.ReadLine()) ?? "";
 
-            if(DicLiga.ContainsKey(idLiga))
+            if(DicEquipo.ContainsKey(idEquipo))
             {
-                Console.WriteLine("Digite Id del Equipo: ");
-                string idEquipo = Convert.ToString(Console.ReadLine()) ?? "Liga";
+                Console.WriteLine("Digite número de identificación del jugador: ");
+                string idJugador = Convert.ToString(Console.ReadLine()) ?? "";
 
-                if(!DicEquipo.ContainsKey(idEquipo)) 
+                if(!DicJugadores.ContainsKey(idJugador)) 
                 {
-                    Console.WriteLine("Digite nombre del equipo: ");
-                    string nombreEquipo = Convert.ToString(Console.ReadLine()) ?? "Equipo";
+                    Console.WriteLine("Digite nombre del JUgador: ");
+                    string nombreJugador = Convert.ToString(Console.ReadLine()) ?? "";
 
-                    Console.WriteLine("Digite el años que tiene el quipo: ");
-                    if(int.TryParse(Console.ReadLine(), out int edadEquipo )){
+                    //Cambiar por fecha de nacimiento
+                    Console.WriteLine("Digite edad del jugador: ");
+                    if(int.TryParse(Console.ReadLine(), out int edadJugador )){
                         
-                        Console.WriteLine("Digite ciudad de origen del equipo: ");
-                        string ciudadEquipo = Convert.ToString(Console.ReadLine()) ?? "ciudad";
+                        Console.WriteLine("Digite dorsal del jugador: ");
+                        string dorsalJugador = Convert.ToString(Console.ReadLine()) ?? "";
+                        
+                        Console.WriteLine("Digite posición de juego del jugador: ");
+                        string posicionJugador = Convert.ToString(Console.ReadLine()) ?? "";
 
-                        Console.WriteLine("Digite propietario del equipo: ");
-                        string propietarioEquipo = Convert.ToString(Console.ReadLine()) ?? "propietario";
+                        Console.WriteLine("Digite ciudad de origen del jugador: ");
+                        string ciudadJugador = Convert.ToString(Console.ReadLine()) ?? "";
 
-                        Equipo newEquipo= new Equipo(nombreEquipo,edadEquipo,ciudadEquipo, propietarioEquipo, idLiga);
-                        DicEquipo.Add(idEquipo,newEquipo);
+                        
 
-                        Console.WriteLine("¡Equipo registrado exitosamente!");
+                        Jugador newJugador= new Jugador(nombreJugador,edadJugador,dorsalJugador,posicionJugador,ciudadJugador,idEquipo);
+                        DicJugadores.Add(idJugador,newJugador);
+
+                        Console.WriteLine("¡Jugador registrado exitosamente!");
                         Console.ReadKey();
 
 
@@ -109,15 +115,15 @@ namespace FederacionFutbol2.Clases
                     }
                     
                 }else{
-                    Console.WriteLine("El número de ID del equipo ya se encuentra resgistrado");
+                    Console.WriteLine("El número de identificación ya  encuentra resgistrado");
                 }
                 
             }else
             {
-                Console.WriteLine("El ID de la liga no se encuentra registrado. Por favor verifique");
+                Console.WriteLine("El ID del jugador no se encuentra registrado. Por favor verifique.");
             }
 
-        }*/
+        }
         
     }
 }

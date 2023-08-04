@@ -8,12 +8,12 @@ namespace FederacionFutbol2.Clases
     public class Equipo 
     {
         //Atributos 
-        private string? nombre;
+        private string nombre;
         private int edad;
-        private string? ciudadOrigen;
-        private string? propietario;
+        private string ciudadOrigen;
+        private string propietario;
 
-        private string? idLiga;
+        private string idLiga;
 
        //Cosntructor
        public Equipo()
@@ -30,7 +30,7 @@ namespace FederacionFutbol2.Clases
        }
 
        //Propiedades
-        public string? Nombre
+        public string Nombre
         {
             get{ return this.nombre; }
             set{ this.nombre = value; }
@@ -42,19 +42,19 @@ namespace FederacionFutbol2.Clases
             set{ this.edad = value; }
         }
 
-        public string? CiudadOrigen
+        public string CiudadOrigen
         {
             get{ return this.ciudadOrigen; }
             set{ this.ciudadOrigen = value; }
         }
         
-        public string? Propietario
+        public string Propietario
         {
             get{ return this.propietario; }
             set{ this.propietario = value; }
         }
 
-        public string? IdLiga
+        public string IdLiga
         {
             get{ return this.idLiga; }
             set{ this.idLiga = value; }
@@ -109,18 +109,16 @@ namespace FederacionFutbol2.Clases
 
         }
 
-        public void MostrarEquipos(Dictionary<string,Equipo> DicEquipo){
+        public void MostrarEquipos(Dictionary<string,Equipo> DicEquipos){
             
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("------ EQUIPOS -----");
             Console.ResetColor();
             Console.WriteLine("ID\tNombre");
-            foreach(var equipo in DicEquipo)
+            foreach(var equipo in DicEquipos)
             {
                 Console.WriteLine(equipo.Key+"\t"+equipo.Value.Nombre);
             }
-            Console.ReadKey();
-
         }
     }
 }

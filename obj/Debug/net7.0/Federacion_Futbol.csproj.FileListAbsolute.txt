@@ -1,30 +1,45 @@
-D:\Documents\Campus Programmer\ClasesCSHARP\Federacion_Futbol\obj\Debug\net7.0\Federacion_Futbol.csproj.AssemblyReference.cache
-D:\Documents\Campus Programmer\ClasesCSHARP\Federacion_Futbol\obj\Debug\net7.0\Federacion_Futbol.GeneratedMSBuildEditorConfig.editorconfig
-D:\Documents\Campus Programmer\ClasesCSHARP\Federacion_Futbol\obj\Debug\net7.0\Federacion_Futbol.AssemblyInfoInputs.cache
-D:\Documents\Campus Programmer\ClasesCSHARP\Federacion_Futbol\obj\Debug\net7.0\Federacion_Futbol.AssemblyInfo.cs
-D:\Documents\Campus Programmer\ClasesCSHARP\Federacion_Futbol\obj\Debug\net7.0\Federacion_Futbol.csproj.CoreCompileInputs.cache
-D:\Documents\Campus Programmer\ClasesCSHARP\Federacion_Futbol\bin\Debug\net7.0\Federacion_Futbol.exe
-D:\Documents\Campus Programmer\ClasesCSHARP\Federacion_Futbol\bin\Debug\net7.0\Federacion_Futbol.deps.json
-D:\Documents\Campus Programmer\ClasesCSHARP\Federacion_Futbol\bin\Debug\net7.0\Federacion_Futbol.runtimeconfig.json
-D:\Documents\Campus Programmer\ClasesCSHARP\Federacion_Futbol\bin\Debug\net7.0\Federacion_Futbol.dll
-D:\Documents\Campus Programmer\ClasesCSHARP\Federacion_Futbol\bin\Debug\net7.0\Federacion_Futbol.pdb
-D:\Documents\Campus Programmer\ClasesCSHARP\Federacion_Futbol\obj\Debug\net7.0\Federacion_Futbol.dll
-D:\Documents\Campus Programmer\ClasesCSHARP\Federacion_Futbol\obj\Debug\net7.0\refint\Federacion_Futbol.dll
-D:\Documents\Campus Programmer\ClasesCSHARP\Federacion_Futbol\obj\Debug\net7.0\Federacion_Futbol.pdb
-D:\Documents\Campus Programmer\ClasesCSHARP\Federacion_Futbol\obj\Debug\net7.0\Federacion_Futbol.genruntimeconfig.cache
-D:\Documents\Campus Programmer\ClasesCSHARP\Federacion_Futbol\obj\Debug\net7.0\ref\Federacion_Futbol.dll
-D:\Documents\Campus Programmer\Federacion_Futbol\bin\Debug\net7.0\Federacion_Futbol.exe
-D:\Documents\Campus Programmer\Federacion_Futbol\bin\Debug\net7.0\Federacion_Futbol.deps.json
-D:\Documents\Campus Programmer\Federacion_Futbol\bin\Debug\net7.0\Federacion_Futbol.runtimeconfig.json
-D:\Documents\Campus Programmer\Federacion_Futbol\bin\Debug\net7.0\Federacion_Futbol.dll
-D:\Documents\Campus Programmer\Federacion_Futbol\bin\Debug\net7.0\Federacion_Futbol.pdb
-D:\Documents\Campus Programmer\Federacion_Futbol\obj\Debug\net7.0\Federacion_Futbol.csproj.AssemblyReference.cache
-D:\Documents\Campus Programmer\Federacion_Futbol\obj\Debug\net7.0\Federacion_Futbol.GeneratedMSBuildEditorConfig.editorconfig
-D:\Documents\Campus Programmer\Federacion_Futbol\obj\Debug\net7.0\Federacion_Futbol.AssemblyInfoInputs.cache
-D:\Documents\Campus Programmer\Federacion_Futbol\obj\Debug\net7.0\Federacion_Futbol.AssemblyInfo.cs
-D:\Documents\Campus Programmer\Federacion_Futbol\obj\Debug\net7.0\Federacion_Futbol.csproj.CoreCompileInputs.cache
-D:\Documents\Campus Programmer\Federacion_Futbol\obj\Debug\net7.0\Federacion_Futbol.dll
-D:\Documents\Campus Programmer\Federacion_Futbol\obj\Debug\net7.0\refint\Federacion_Futbol.dll
-D:\Documents\Campus Programmer\Federacion_Futbol\obj\Debug\net7.0\Federacion_Futbol.pdb
-D:\Documents\Campus Programmer\Federacion_Futbol\obj\Debug\net7.0\Federacion_Futbol.genruntimeconfig.cache
-D:\Documents\Campus Programmer\Federacion_Futbol\obj\Debug\net7.0\ref\Federacion_Futbol.dll
+D:/Documents/Campus Programmer/ClasesCSHARP/Federacion_Futbol/obj/Debug/net7.0/Federacion_Futbol.csproj.AssemblyReference.cache
+D:/Documents/Campus Programmer/ClasesCSHARP/Federacion_Futbol/obj/Debug/net7.0/Federacion_Futbol.GeneratedMSBuildEditorConfig.editorconfig
+D:/Documents/Campus Programmer/ClasesCSHARP/Federacion_Futbol/obj/Debug/net7.0/Federacion_Futbol.AssemblyInfoInputs.cache
+D:/Documents/Campus Programmer/ClasesCSHARP/Federacion_Futbol/obj/Debug/net7.0/Federacion_Futbol.AssemblyInfo.cs
+D:/Documents/Campus Programmer/ClasesCSHARP/Federacion_Futbol/obj/Debug/net7.0/Federacion_Futbol.csproj.CoreCompileInputs.cache
+D:/Documents/Campus Programmer/ClasesCSHARP/Federacion_Futbol/bin/Debug/net7.0/Federacion_Futbol.exe
+D:/Documents/Campus Programmer/ClasesCSHARP/Federacion_Futbol/bin/Debug/net7.0/Federacion_Futbol.deps.json
+D:/Documents/Campus Programmer/ClasesCSHARP/Federacion_Futbol/bin/Debug/net7.0/Federacion_Futbol.runtimeconfig.json
+D:/Documents/Campus Programmer/ClasesCSHARP/Federacion_Futbol/bin/Debug/net7.0/Federacion_Futbol.dll
+D:/Documents/Campus Programmer/ClasesCSHARP/Federacion_Futbol/bin/Debug/net7.0/Federacion_Futbol.pdb
+D:/Documents/Campus Programmer/ClasesCSHARP/Federacion_Futbol/obj/Debug/net7.0/Federacion_Futbol.dll
+D:/Documents/Campus Programmer/ClasesCSHARP/Federacion_Futbol/obj/Debug/net7.0/refint/Federacion_Futbol.dll
+D:/Documents/Campus Programmer/ClasesCSHARP/Federacion_Futbol/obj/Debug/net7.0/Federacion_Futbol.pdb
+D:/Documents/Campus Programmer/ClasesCSHARP/Federacion_Futbol/obj/Debug/net7.0/Federacion_Futbol.genruntimeconfig.cache
+D:/Documents/Campus Programmer/ClasesCSHARP/Federacion_Futbol/obj/Debug/net7.0/ref/Federacion_Futbol.dll
+D:/Documents/Campus Programmer/Federacion_Futbol/bin/Debug/net7.0/Federacion_Futbol.exe
+D:/Documents/Campus Programmer/Federacion_Futbol/bin/Debug/net7.0/Federacion_Futbol.deps.json
+D:/Documents/Campus Programmer/Federacion_Futbol/bin/Debug/net7.0/Federacion_Futbol.runtimeconfig.json
+D:/Documents/Campus Programmer/Federacion_Futbol/bin/Debug/net7.0/Federacion_Futbol.dll
+D:/Documents/Campus Programmer/Federacion_Futbol/bin/Debug/net7.0/Federacion_Futbol.pdb
+D:/Documents/Campus Programmer/Federacion_Futbol/obj/Debug/net7.0/Federacion_Futbol.csproj.AssemblyReference.cache
+D:/Documents/Campus Programmer/Federacion_Futbol/obj/Debug/net7.0/Federacion_Futbol.GeneratedMSBuildEditorConfig.editorconfig
+D:/Documents/Campus Programmer/Federacion_Futbol/obj/Debug/net7.0/Federacion_Futbol.AssemblyInfoInputs.cache
+D:/Documents/Campus Programmer/Federacion_Futbol/obj/Debug/net7.0/Federacion_Futbol.AssemblyInfo.cs
+D:/Documents/Campus Programmer/Federacion_Futbol/obj/Debug/net7.0/Federacion_Futbol.csproj.CoreCompileInputs.cache
+D:/Documents/Campus Programmer/Federacion_Futbol/obj/Debug/net7.0/Federacion_Futbol.dll
+D:/Documents/Campus Programmer/Federacion_Futbol/obj/Debug/net7.0/refint/Federacion_Futbol.dll
+D:/Documents/Campus Programmer/Federacion_Futbol/obj/Debug/net7.0/Federacion_Futbol.pdb
+D:/Documents/Campus Programmer/Federacion_Futbol/obj/Debug/net7.0/Federacion_Futbol.genruntimeconfig.cache
+D:/Documents/Campus Programmer/Federacion_Futbol/obj/Debug/net7.0/ref/Federacion_Futbol.dll
+/home/arteN01-061/Documents/Margie_Bocanegra/Federacion_Futbol/obj/Debug/net7.0/Federacion_Futbol.csproj.AssemblyReference.cache
+/home/arteN01-061/Documents/Margie_Bocanegra/Federacion_Futbol/obj/Debug/net7.0/Federacion_Futbol.GeneratedMSBuildEditorConfig.editorconfig
+/home/arteN01-061/Documents/Margie_Bocanegra/Federacion_Futbol/obj/Debug/net7.0/Federacion_Futbol.AssemblyInfoInputs.cache
+/home/arteN01-061/Documents/Margie_Bocanegra/Federacion_Futbol/obj/Debug/net7.0/Federacion_Futbol.AssemblyInfo.cs
+/home/arteN01-061/Documents/Margie_Bocanegra/Federacion_Futbol/obj/Debug/net7.0/Federacion_Futbol.csproj.CoreCompileInputs.cache
+/home/arteN01-061/Documents/Margie_Bocanegra/Federacion_Futbol/obj/Debug/net7.0/Federacion_Futbol.dll
+/home/arteN01-061/Documents/Margie_Bocanegra/Federacion_Futbol/obj/Debug/net7.0/refint/Federacion_Futbol.dll
+/home/arteN01-061/Documents/Margie_Bocanegra/Federacion_Futbol/obj/Debug/net7.0/Federacion_Futbol.pdb
+/home/arteN01-061/Documents/Margie_Bocanegra/Federacion_Futbol/bin/Debug/net7.0/Federacion_Futbol
+/home/arteN01-061/Documents/Margie_Bocanegra/Federacion_Futbol/bin/Debug/net7.0/Federacion_Futbol.deps.json
+/home/arteN01-061/Documents/Margie_Bocanegra/Federacion_Futbol/bin/Debug/net7.0/Federacion_Futbol.runtimeconfig.json
+/home/arteN01-061/Documents/Margie_Bocanegra/Federacion_Futbol/bin/Debug/net7.0/Federacion_Futbol.dll
+/home/arteN01-061/Documents/Margie_Bocanegra/Federacion_Futbol/bin/Debug/net7.0/Federacion_Futbol.pdb
+/home/arteN01-061/Documents/Margie_Bocanegra/Federacion_Futbol/obj/Debug/net7.0/Federacion_Futbol.genruntimeconfig.cache
+/home/arteN01-061/Documents/Margie_Bocanegra/Federacion_Futbol/obj/Debug/net7.0/ref/Federacion_Futbol.dll
