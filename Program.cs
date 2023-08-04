@@ -109,7 +109,7 @@ internal class Program
                 metodosEquipo.MostrarEquipos(DicEquipos);
                 metodosEntrenador.RegistrarEntrenador(DicEquipos,DicEntrenadores);
 
-                foreach(var entrenador in DicJugadores)
+                foreach(var entrenador in DicEntrenadores)
                 {
                     string idEquipo = entrenador.Value.IdEquipo;
                     string equipo = DicEquipos[idEquipo].Nombre ?? "Equipo";
@@ -135,7 +135,7 @@ internal class Program
                 break;
             case "1.6":
                     metodosJugador.MostrarJugadores(DicEquipos,DicJugadores);
-                    
+                    metodosJugador.VenderJugador(DicEquipos,DicJugadores);
                 break;
             case "1.7":
                 break;

@@ -145,9 +145,47 @@ namespace FederacionFutbol2.Clases
             }
         }
 
-        public void VenderJugador(Dictionary<string,Jugador> DicJugadores)
+        public void VenderJugador(Dictionary<string,Equipo> DicEquipos,Dictionary<string,Jugador> DicJugadores)
         {
             
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("******* VENTA DE JUGADOR *******");
+            Console.ResetColor();
+
+            Console.WriteLine("Digite número de identificación del jugador que desea vender:");
+            string idJugador = Convert.ToString(Console.ReadLine());
+
+            if(DicJugadores.ContainsKey(idJugador))
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("------ EQUIPOS -----");
+                Console.ResetColor();
+                Console.WriteLine("ID\tNombre");
+                foreach(var equipo in DicEquipos)
+                    {
+                        if(equipo.Key!=DicJugadores[idJugador].IdEquipo)
+                        {
+                            Console.WriteLine(equipo.Key+"\t"+equipo.Value.Nombre);
+                        }
+
+                    }
+                Console.WriteLine("Digite número de ID del equipo al que quiere vender al jugador {0}:",DicJugadores[idJugador].Nombre);
+                    //Equipo comprador 
+                    string idEquipo = Convert.ToString(Console.ReadLine());
+
+                    if(idEquipo != DicJugadores[idJugador].IdEquipo)
+                    {
+                        DicJugadores[idJugador].IdEquipo = idEquipo;
+                        Console.WriteLine("El jugador se ha vendido sastisfatoriamente!");
+
+                    }else{
+                        Console.WriteLine("No se puede vender al mismo equipo :))))");
+                    }
+            }else
+            {
+                Console.WriteLine("El número de identificación no se encuentra resgistrado.");
+
+            }
         }
     }
 }
