@@ -121,7 +121,7 @@ namespace FederacionFutbol2.Clases
                 
             }else
             {
-                Console.WriteLine("El ID del entrenador no se encuentra registrado. Por favor verifique.");
+                Console.WriteLine("El ID del masajista no se encuentra registrado. Por favor verifique.");
             }
 
         }
