@@ -4,20 +4,24 @@ using FederacionFutbol2.Clases;
 internal class Program
 {
      //Diccionario de Ligas
-    static Dictionary<string,Liga> DicLigas = new Dictionary<string,Liga>();
+    static Dictionary<string,Liga> DicLigas = new ();
 
     //Diccionario de Equipos
-    static Dictionary<string,Equipo> DicEquipos = new Dictionary<string,Equipo>();
+    static Dictionary<string,Equipo> DicEquipos = new ();
     //Diccionario de Jugador
-    static Dictionary<string,Jugador> DicJugadores = new Dictionary<string,Jugador>();
+    static Dictionary<string,Jugador> DicJugadores = new ();
+    //Diccionario de Entrenador
+    static Dictionary<string,Entrenador> DicEntrenadores = new ();
+    //Diccionario de Entrenador
+    static Dictionary<string,Masajista> DicMasajistas = new ();
 
-    public static void Main(string[] args)
+    public static void Main()
     {
         string opcion;
 
         do
         {
-            MainMenu mainmenu = new MainMenu();
+            MainMenu mainmenu = new ();
 
             opcion = mainmenu.MostrarMenu();
 
@@ -44,18 +48,21 @@ internal class Program
     static void OpcionesPlantel()
     {
         string opcion;
-        Liga metodosLiga = new Liga();
-        Equipo metodosEquipo = new Equipo();
-        Jugador metodosJugador = new Jugador();
+        Liga metodosLiga = new ();
+        Equipo metodosEquipo = new ();
+        Jugador metodosJugador = new ();
+        Entrenador metodosEntrenador = new ();
+        Masajista metodosMasajista = new();
 
-        do{
-            MenuPlantel menuplantel = new MenuPlantel();
+        do
+        {
+            MenuPlantel menuplantel = new ();
             opcion = menuplantel.MostrarPlantel();
 
             switch (opcion)
             {
             case "1.1":
-                metodosLiga.RegistrarLiga(DicLigas);
+                    Liga.RegistrarLiga(DicLigas);
                 break;
             case "1.2":
                 metodosLiga.MostrarLigas(DicLigas);
@@ -81,6 +88,8 @@ internal class Program
                 }
                 break;
             case "1.4":
+                metodosEquipo.MostrarEquipos(DicEquipos);
+                metodosEntrenador.RegistrarEntrenador(DicEquipos,DicEntrenadores);
                 break;
             case "1.5":
                 break;
@@ -103,7 +112,7 @@ internal class Program
 
         do
         {
-            MenuBusqueda menuBusqueda = new MenuBusqueda();
+            MenuBusqueda menuBusqueda = new ();
             opcion = menuBusqueda.MostrarBusqueda();
             switch (opcion)
             {

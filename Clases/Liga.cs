@@ -44,7 +44,7 @@ namespace FederacionFutbol2.Clases
         //MÉTODOS
         //Agregar Liga
 
-        public void RegistrarLiga(Dictionary<string,Liga> DicLiga)
+        public static void RegistrarLiga(Dictionary<string,Liga> DicLiga)
         {
             //Console.Clear();
             Console.ForegroundColor = ConsoleColor.Blue;

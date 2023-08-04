@@ -84,7 +84,7 @@ namespace FederacionFutbol2.Clases
 
                 if(!DicJugadores.ContainsKey(idJugador)) 
                 {
-                    Console.WriteLine("Digite nombre del JUgador: ");
+                    Console.WriteLine("Digite nombre del Jugador: ");
                     string nombreJugador = Convert.ToString(Console.ReadLine()) ?? "";
 
                     //Cambiar por fecha de nacimiento
@@ -102,7 +102,7 @@ namespace FederacionFutbol2.Clases
 
                         
 
-                        Jugador newJugador= new Jugador(nombreJugador,edadJugador,dorsalJugador,posicionJugador,ciudadJugador,idEquipo);
+                        Jugador newJugador= new (nombreJugador,edadJugador,dorsalJugador,posicionJugador,ciudadJugador,idEquipo);
                         DicJugadores.Add(idJugador,newJugador);
 
                         Console.WriteLine("¡Jugador registrado exitosamente!");
@@ -120,7 +120,7 @@ namespace FederacionFutbol2.Clases
                 
             }else
             {
-                Console.WriteLine("El ID del jugador no se encuentra registrado. Por favor verifique.");
+                Console.WriteLine("El ID del equipo no se encuentra registrado. Por favor verifique.");
             }
 
         }
