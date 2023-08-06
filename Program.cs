@@ -14,6 +14,13 @@ internal class Program
     //Diccionario de Entrenador
     static Dictionary<string,Masajista> DicMasajistas = new ();
 
+
+    static Liga metodosLiga = new ();
+    static Equipo metodosEquipo = new ();
+    static Jugador metodosJugador = new ();
+    static Entrenador metodosEntrenador = new ();
+    static Masajista metodosMasajista = new();
+
     public static void Main()
     {
         string opcion;
@@ -32,7 +39,7 @@ internal class Program
 
         Jugador newJugador = new("Cesar",17,"18","Lateral","Valledupar","111");
         Jugador newJugador2 = new("Luis",17,"18","Delantero","Valledupar","222");
-        Jugador newJugador3 = new("Alejandro",17,"18","Delantero","Valledupar","333");
+        Jugador newJugador3 = new("Alejo",17,"18","Delantero","Valledupar","333");
 
         DicJugadores.Add("999",newJugador);
         DicJugadores.Add("888",newJugador);
@@ -73,11 +80,7 @@ internal class Program
     static void OpcionesPlantel()
     {
         string opcion;
-        Liga metodosLiga = new ();
-        Equipo metodosEquipo = new ();
-        Jugador metodosJugador = new ();
-        Entrenador metodosEntrenador = new ();
-        Masajista metodosMasajista = new();
+        
 
         do
         {
@@ -159,14 +162,16 @@ internal class Program
             switch (opcion)
             {
             case "2.1":
-                Console.WriteLine("Holuu");
-
+                metodosEquipo.MostrarEquipos(DicEquipos);
                 Console.ReadKey();
-
                 break;
             case "2.2":
+                metodosJugador.MostrarJugadores(DicEquipos,DicJugadores);
+                Console.ReadKey();
                 break;
             case "2.3":
+                metodosJugador.FiltroPosicionJugador(DicEquipos,DicJugadores);
+                Console.ReadKey();
                 break;
             case "2.4":
                 break;

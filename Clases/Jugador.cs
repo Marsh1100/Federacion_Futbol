@@ -187,5 +187,30 @@ namespace FederacionFutbol2.Clases
 
             }
         }
+
+        public void FiltroPosicionJugador(Dictionary<string,Equipo> DicEquipos,Dictionary<string, Jugador> DicJugadores)    
+        {
+            Console.WriteLine("Digite la posición de jugadores que desea visualizar:");
+            string posicionJugador = Convert.ToString(Console.ReadLine()).ToUpper();
+
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("------ JUGADOR POSICIÓN {0} -----", posicionJugador.ToUpper());
+            Console.ResetColor();
+            Console.WriteLine("ID\tNombre\tEquipo");
+            foreach(var jugador in DicJugadores)
+            {
+                string idEquipo = jugador.Value.IdEquipo;
+                string equipo = DicEquipos[idEquipo].Nombre;
+
+                string pJugador =jugador.Value.PosicionJuego.ToUpper();
+
+
+                if(pJugador.Equals(posicionJugador))
+                {
+                    Console.WriteLine(jugador.Key+"\t"+jugador.Value.Nombre+"\t"+equipo);
+
+                }
+            }
+        }
     }
 }

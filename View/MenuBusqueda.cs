@@ -20,7 +20,7 @@ namespace FederacionFutbol2.View
 
             Console.WriteLine("2.1 Listar Equipos");
             Console.WriteLine("2.2 Listar Jugadores");
-            Console.WriteLine("2.3 Buscar los delanteros de cada equipo");
+            Console.WriteLine("2.3 Buscar Jugadores según su posición de cada equipo");
             Console.WriteLine("2.4 Buscar cuerpo de entrenadores por equipo");
             Console.WriteLine("2.5 Regresar al menu principal");
 
