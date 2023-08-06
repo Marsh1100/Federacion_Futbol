@@ -129,5 +129,31 @@ namespace FederacionFutbol2.Clases
             }
 
         }
+
+        
+        public void CuerpoDeEntrenadores(Dictionary<string,Equipo> DicEquipos,Dictionary<string,Entrenador> DicEntrenadores)
+        {
+            foreach(var equipo in DicEquipos)
+            {   
+
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("------ ENTRENADOR EQUIPO {0} -----", equipo.Value.Nombre.ToUpper());
+                Console.ResetColor();
+                Console.WriteLine("ID\tNombre\tEspecialidad");
+                
+
+                foreach(var entrenador in DicEntrenadores)
+                {
+                    
+
+                    if(entrenador.Value.IdEquipo == equipo.Key)
+                    {
+                        Console.WriteLine("{0}\t{1}\t{2}",entrenador.Key,entrenador.Value.Nombre, entrenador.Value.Especialidad);
+                    }
+
+                    
+                }
+            }
+        }
     }
 }

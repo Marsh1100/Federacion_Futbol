@@ -45,9 +45,19 @@ internal class Program
         DicJugadores.Add("888",newJugador);
         DicJugadores.Add("666",newJugador2);
         DicJugadores.Add("555",newJugador3);
-
-
         DicJugadores.Add("777",newJugador2);
+
+        Entrenador newEntrenador = new("Pepito",48,"1547","Estrategia","CopaCabana","111");
+        DicEntrenadores.Add("741",newEntrenador);
+        DicEntrenadores.Add("987",newEntrenador);
+
+
+        Entrenador newEntrenador2 = new("Freddy",52,"1547","Estado físico","CopaCabana","111");
+        DicEntrenadores.Add("963",newEntrenador2);
+
+        Entrenador newEntrenador3 = new("Maicol",52,"1547","Estado físico","CopaCabana","222");
+        DicEntrenadores.Add("852",newEntrenador3);
+        Entrenador newEntrenador4 = new("Carlos",52,"1547","Bailarín","CopaCabana","222");
 
 
 
@@ -174,6 +184,9 @@ internal class Program
                 Console.ReadKey();
                 break;
             case "2.4":
+                metodosEntrenador.CuerpoDeEntrenadores(DicEquipos,DicEntrenadores);
+                Console.ReadKey();
+
                 break;
             default:
                 Console.WriteLine("Opción inválida. Inténtalo de nuevo.");
